@@ -1,0 +1,21 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+</head>
+<body>
+<div ng-app>
+<div>
+<form name="userInfo">
+<input name="userName" required="required" ng-model="userName" ng-minlength="6" ng-maxlength="12" type="text" />
+<p>“ü—Í‚µ‚½“à—eF {{userName}}</p>
+<p>
+<span ng-show="userInfo.userName.$error.required">•K{</span>
+<span ng-show="userInfo.userName.$error.minlength">6•¶šˆÈã‚Å‚·</span>
+<span ng-show="userInfo.userName.$error.maxlength">12•¶š‚Ü‚Å‚Å‚·</span>
+<span ng-show="userInfo.userName.$valid">OK</span>
+</p>
+</form>
+</div>
+</div>
+</body>
+</html>
