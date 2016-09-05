@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/angular.min.js"></script>
+<script src="js/script2.js"></script>
+</head>
+<body>
+<div ng-app="spicyApp2" ng-controller="SpicyCtrl">
+    <input ng-model="customSpice">
+    <button ng-click="spicy('chili')">Chili</button>
+    <button ng-click="spicy(customSpice)">Custom spice</button>
+    <p>The food is {{spice}} spicy!</p>
+</div>
+</body>
+</html>
